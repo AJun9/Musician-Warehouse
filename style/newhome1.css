@@ -1,0 +1,604 @@
+body {
+    margin: 0;
+    background: #EBEAD9;
+  }
+  
+  /* Calibrate, Find the North */
+  nav {
+    height: fit-content;
+  }
+  
+  .Desktop-nav {
+    width: 1000px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Desktop-nav.logo {
+    height: 100%;
+    width: 80px;
+  }
+  
+  .nav-block {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-block span {
+    margin: 0px 10px;
+  }
+  
+  nav {
+    display: flex;
+    flex-flow: row;
+    background-color: #cbc5c5;
+    justify-content: space-between;
+    min-width: 600px;
+    min-height: 40px;
+    max-height: 60px;
+  }
+  
+  .navlogo {
+    width: 80px;
+    margin: 0.2vh 1vw 0 0;
+    padding-right: 10;
+    align-self: center;
+  }
+  .logo {
+    justify-content: center;
+    align-self: center;
+  }
+  .navbtn {
+    display: flex;
+    height: 40%;
+    align-self: center;
+    min-width: 400px;
+    margin-left: -30px;
+  }
+  
+  .navbtn li {
+    display: flex;
+    padding: 0.6rem;
+    margin-top: 0.3vw;
+    align-self: center;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05vw;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .icon li {
+    display: flex;
+    height: 40%;
+    align-self: center;
+    justify-content: flex-end;
+  }
+  
+  .icon li i {
+    justify-content: center;
+    padding: 0.6rem;
+    margin-top: 0.3vw;
+    align-self: center;
+  }
+  
+  .Desktop-nav {
+    width: 1000px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-block {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+  
+  /* Here Main */
+  
+  .main {
+    grid-area: main;
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  .main-title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 5rem;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .main-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 10rem;
+    color: white;
+    font-size: 0.6rem;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .title {
+    grid-area: title;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .pic11 {
+    grid-area: pic11;
+    position: relative;
+    margin: 10px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    background-color:white;
+  }
+  
+  .pic11,
+  .pic12,
+  .pic13,
+  .pic21,
+  .pic22,
+  .pic23 {
+    position: relative;
+    margin: 10px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    background-color:white;
+    box-shadow: 6px 0px 6px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .trend {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 10px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .p-title {
+    font-size: 1.3rem;
+    font-weight: bolder;
+    margin: 10px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .p-title-line {
+    width: 60%;
+    margin: auto;
+    border-top: 1px solid rgb(192, 192, 192);
+  }
+  
+  .p-text {
+    font-size: 0.85rem;
+    margin: 10px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .p-buy {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    margin: 0;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .p-read {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    margin: 0;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .pic12 {
+    grid-area: pic12;
+  }
+  .pic13 {
+    grid-area: pic13;
+  }
+  
+  .footer {
+    background: #a5a3a3;
+    height: 400px;
+    margin-bottom: 0;
+  }
+  
+  .page {
+    display: grid;
+    max-width: 992px;
+    margin: auto;
+    grid-template-rows: auto 50px auto auto;
+    grid-template-areas:
+      "main main main main"
+      "title title title title"
+      "pic11 pic12 pic13 pic13"
+      "pic21 pic21 pic22 pic23";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .pic21 {
+    grid-area: pic21;
+  }
+  .pic22 {
+    grid-area: pic22;
+  }
+  .pic23 {
+    grid-area: pic23;
+  }
+  
+  /* One More Thing */
+  @media screen and (max-width: 768px) {
+    .page {
+      display: grid;
+      width: 100%;
+      grid-template-rows: auto 60px auto auto auto auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+        "main main"
+        "title title"
+        "pic11 pic12"
+        "pic13 pic13"
+        "pic21 pic21"
+        "pic22 pic23";
+    }
+  
+    .main {
+      padding: 0 20px;
+    }
+  
+    .main-title {
+      display: none;
+    }
+    .main-text {
+      display: none;
+    }
+    .pic11 {
+      margin: 10px 10px 5px 30px;
+    }
+  
+    .pic12 {
+      margin: 10px 30px 5px 10px;
+    }
+  
+    .pic13 {
+      margin: 10px 30px 5px;
+    }
+  
+    .pic21 {
+      margin: 10px 30px 5px;
+      grid-area: pic21;
+    }
+    .pic22 {
+      margin: 10px 10px 5px 30px;
+      grid-area: pic22;
+    }
+    .pic23 {
+      margin: 10px 30px 5px;
+      grid-area: pic23;
+    }
+  /* Here Comes Mobile Nav */
+    .Desktop-nav {
+      display: none;
+    }
+  
+    .mobile-nav {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      display: flex;
+    }
+  
+    .mobile-menu {
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+      margin-left: -10px;
+      cursor: pointer;
+    }
+  
+    .menu {
+      height: 100%;
+      width: 50px;
+    }
+    .menu > i {
+      font-size: 2rem;
+    }
+    .logo-mobile {
+      width: 130px;
+      position: absolute;
+      top: 18px;
+      left: 41%;
+    }
+    .mobile-cart-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+    }
+  
+    .logo-mobile-cart {
+      width: 50px;
+      position: absolute;
+      top: 18px;
+      right: 0;
+    }
+    .logo-mobile-cart > i {
+      font-size: 2rem;
+    }
+    .search {
+      font-size: 2rem;
+      line-height: 1;
+    }
+  
+    .search > i {
+      font-size: 2rem;
+    }
+    .cart {
+      position: absolute;
+      text-align: end;
+      top: 0;
+      height: 100%;
+      width: 50px;
+    }
+    .cart > i {
+      font-size: 2rem;
+    }
+  
+    /* Side Menu */
+  
+    .sidemenu * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    .sidemenu {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #a5a3a3;
+      overflow:auto;
+    }
+    .sidemenu {
+      display: none;
+    }
+    .cancel {
+      position: absolute;
+      top: 5%;
+      left: 90%;
+      font-size: 50px;
+      cursor: pointer;
+    }
+    .id {
+      margin-top: -15px;
+      font-size: 20px;
+      margin-left: 120px;
+      margin-right: 100px;
+      border-bottom: black solid 2px;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+  
+    .user {
+      position: relative;
+      top: 40px;
+      font-size: 90px;
+    }
+    .sidemenu h1 {
+      font-size: 40px;
+      color: black;
+      text-align: start;
+      margin-top: 7rem;
+      margin-left: 1rem;
+      line-height: 80px;
+      font-family: 'Playfair Display', serif;
+    }
+  
+    .sidemenu ul a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 80px;
+      font-size: 30px;
+      color: black;
+      padding-left: 100px;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+  
+    .signout {
+      margin-top: 60px;
+      font-size: 50px;
+      margin-left: 20px;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+    }
+    /* Search Mobile */
+    .form * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    .form {
+      display: none;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #a5a3a3;
+      width: 100%;
+      height: 42px;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      border: none;
+    }
+  
+    #nav {
+      z-index: 999;
+      width: 100%;
+      background-color: #a5a3a3;
+    }
+  
+    input {
+      width: 80%;
+      height: 42px;
+      background-color: white;
+      border: none;
+      border-radius: 1.5px;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 15px;
+      outline: none;
+    }
+    #btn {
+      font-size: 25px;
+      background-color: #a5a3a3;
+      border: 0;
+    }
+  }
+  /*footer*/
+  footer {
+    list-style: none;
+    margin: 0;
+    margin-top: 5vh;
+    padding: 0;
+  }
+  
+  .sock {
+    background-color: #cbc5c5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "left-foot right-foot"
+      "left-tiptoe FindUs";
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  
+  .left-foot {
+    grid-area: left-foot;
+    margin-left: 20vw;
+    display: flex;
+    flex-flow: column;
+    margin-top: 3rem;
+  }
+  
+  .toptoe {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  
+  .left-foot a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3rem;
+    color: white;
+    font-size: 0.8rem;
+  }
+  
+  /* LeftTiptoe Socks on */
+  .left-foot a:first-child {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Get me my lawyer */
+  .copyright {
+    color: black;
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1vh;
+    margin-left: 0.3vh;
+    font-weight: bold;
+  }
+  
+  /* Nice Kiddo, You Put Your Shoes on the Left Foot, HoHo! */
+  /* Putting Shoes on Right Foot */
+  .right-foot {
+    grid-area: right-foot;
+    margin-right: 20vw;
+    display: flex;
+    flex-flow: column;
+    margin-top: 3rem;
+  }
+  
+  .right-foot a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3rem;
+    color: white;
+    font-size: 0.8rem;
+  }
+  
+  .right-foot a:first-child {
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Right tiptoe socks color */
+  
+  .left-tiptoe {
+    grid-area: left-tiptoe;
+    margin-left: 20vw;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  /* Get me my lawyer */
+  .copyright {
+    color: black;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1vh;
+    margin-left: 0.3vh;
+    font-weight: bold;
+  }
+  .FindUs {
+    grid-area: FindUs;
+  }
+  .FindUs ul {
+    list-style: none;
+    padding-top: 0.2rem;
+    display: flex;
+  }
+  .FindUs ul li {
+    text-decoration: none;
+    padding-right: 0.2rem;
+  }
+  
+  /* Go out Kiddo */
+  

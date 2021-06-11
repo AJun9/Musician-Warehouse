@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/c83b823ada.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style/newhome1.css">
+  <title>Musician Warehouse</title>
+</head>
+
+<body>
+  <nav>
+    <div class="Desktop-nav">
+        <div class="navlogo nav-block">
+            <img class="logo" src="logo.svg" alt="logo">
+            <ul class="navbtn">
+              <li a href="#">guitar</li>
+              <li a href="#">bass</li>
+              <li a href="#">amplifier</li>
+              <li a href="#">space</li>
+              <li onclick="window.open('cart.html')" a href="#">bag</li>
+            </ul>
+        </div>
+      <ul class="icon nav-block">
+          <li onclick="window.open('productlist.html')"><i href="#" class="fas fa-search"></i></li>
+          <li><i href="#" class="fas fa-user-circle"></i></li>
+          <li><i href="#" class="far fa-bell"></i></li>
+          <li><i href="#" class="fas fa-ellipsis-v"></i></li>
+      </ul>
+    </div>
+    
+    <div class="mobile-nav">
+      <ul class="mobile-menu">
+        <li class="menu" onclick="menuShowClick()"><i class="fas fa-bars"></i></li>
+        <li class="search" onclick="searchShowClick()"><i class="fas fa-search"></i></li>
+      </ul>
+      <div>
+    </div>
+
+    <div>
+      <img src="mobilelogo.svg" class="logo-mobile">
+    </div>
+    
+    <div class="logo-mobile-cart">
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    
+    <div class="sidemenu">
+      <p class="cancel" onclick="menuHideClick()"><i class="fas fa-times"></i></p>
+      <h1><span class="user"><i href="#" class="fas fa-user-circle"></i></span> John Appleased</h1>
+      <p class="id">@johnappleased</p>
+      <ul>
+        <li><a href="#">Account</a></li>
+        <li><a href="cart.html">Bag</a></li>
+        <li><a href="#">Space</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Notificaion</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <p class="signout">Sign out</p>
+    </div>
+
+    <div class="form">
+      <div id="nav">
+        <input type="text" name="uname" placeholder="Search here...">  
+        <button id="btn" onclick="searchHideClick()"><i class="far fa-times-circle"></i></button>
+      </div>
+    </div>
+</nav>
+
+
+
+
+
+<!-- Search Over -->
+<section class="page">
+    
+      <article class="main">
+        <img src="./images/main.jpeg" alt="main" />
+        <p class="main-title">What We Call Music</p>
+        <p class="main-text">
+          In Musicianʼs Warehouse,We believes the Best Music Comes from the True Feelings, No Matter
+          <br /> whose Feelings It is. Connection Makes People Matters,We Can Not Live Without Communication.We Sell
+          Instruments,
+          <br />But What We Value is the Music,the Bounds between Musicians and Audience.
+        </p>
+      </article>
+      <article class="title">
+        <div class="p-title-line"></div>
+        <p class="trend">TREND NOW</p>
+      </article>
+      <article class="pic11">
+        <img src="./images/p11.jpeg" alt="pic11" onclick="window.open('product.html')">
+        <p class="p-title">Fender 600</p>
+        <p class="p-text">This is our new release for this month, 30%off for our member.</p>
+        <p class="p-buy" onclick="window.open('product.html')">ShopNow</p>
+      </article>
+      <article class="pic12">
+        <img src="./images/p12.jpeg" alt="pic12">
+        <p class="p-title">How to Write a Song</p>
+        <p class="p-text">Mr. Akita is going to give an online presentation for his new EP: Reiwa Ninen, Utenkekkou and its production.</p>
+        <p class="p-read">Read</p>
+      </article>
+      <article class="pic13">
+        <img src="./images/p13.jpeg" alt="pic13">
+        <p class="p-title">Power of Black and White</p>
+        <p class="p-text">All new designed Gibson 60 Years Anniversary Edition Guitar. Now is available exclusively at Musician Warehouse, Preorder Only.</p>
+        <p class="p-text">Premium Membership Required for Preorder.</p>
+        <p class="p-buy">ShopNow</p>
+      </article>
+      <article class="pic21">
+        <img src="./images/p21.jpeg" alt="pic21">
+        <p class="p-title">Is that a SUPERA?</p>
+        <p class="p-text">How Yamaha Tuned these Legendary Sports Car.</p>
+        <p class="p-read">Read</p>
+      </article>
+      <article class="pic22">
+        <img src="./images/p22.jpeg" alt="pic11">
+        <p class="p-title">Behind the Album</p>
+        <p class="p-text">Yokobe San is going to share his experience in performance design.</p>
+        <p class="p-buy">ShopNow</p>
+      </article>
+      <article class="pic23">
+        <img src="./images/p23.jpeg" alt="pic12">
+        <p class="p-title">Uten Kekkou</p>
+        <p class="p-text">Stories in the 2020.</p>
+        <p class="p-read">Read</p>
+      </article>
+    </section>
+
+
+
+
+
+    <!-- This is footer -->
+<footer>
+  <div class="sock">
+          <div class="left-foot">
+              <a class="toptoe" href="#">Customer Service</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Delievery Information</a>
+              <a href="#">Return Policy</a>
+              <a href="#">Return Policy</a>
+              <a href="#">Track My Order</a>
+              <a href="#">Retrieve Store Quote</a>
+              <a href="#">Finance</a>
+              <a href="#">Cookie Information</a>
+              <a href="#">Terms & Condition</a>
+          </div>
+          <div class="left-tiptoe">
+              <img src ="logo.svg" alt="mw" class="logo">
+              <p class ="copyright">©️2021</p>
+          </div>
+
+
+          <div class="right-foot">
+              <a class="toptoe" href="#">Our Story & Service</a>
+              <a href="#">E-Gift Cards</a>
+              <a href="#">News</a>
+              <a href="#">Education</a>
+              <a href="#">Music Therapy</a>
+              <a href="#">Our Value</a>
+              <a href="#">Newsroom</a>
+              <a href="#">Find Us Local</a>
+              <a href="#">Tune</a>
+              <a href="#">Our Story in Athens</a>
+          </div>
+          <div class="FindUs">
+              <a class="toptoe" href="#">Find Us</a>
+              <ul class="social-icons">
+                  <li><i class="fab fa-twitter-square"></i></li>
+                  <li><i class="fab fa-facebook-square"></i></li>
+                  <li><i class="fab fa-tiktok"></i></li>
+                  <li><i class="fab fa-instagram-square"></i></li>
+              </ul> 
+          </div>
+
+  </div>
+</footer>
+</div>
+
+<script>
+  function menuShowClick() {
+    document.getElementsByClassName("sidemenu")[0].style.display = 'block';
+    document.getElementsByClassName("page")[0].style.display = 'none';
+    document.getElementsByClassName("form")[0].style.display = 'none';
+  }
+
+  function menuHideClick(){
+    document.getElementsByClassName("sidemenu")[0].style.display = 'none';
+    document.getElementsByClassName("page")[0].style.display = 'block';
+    document.getElementsByClassName("form")[0].style.display = 'none';
+  }
+  function searchShowClick() {
+    document.getElementsByClassName("form")[0].style.display = 'block';
+    document.getElementsByClassName("page")[0].style.display = 'none';
+    document.getElementsByClassName("sidemenu")[0].style.display = 'none';
+  }
+
+  function searchHideClick(){
+    document.getElementsByClassName("form")[0].style.display = 'none';
+    document.getElementsByClassName("page")[0].style.display = 'block';
+    document.getElementsByClassName("sidemenu")[0].style.display = 'none';
+  }
+</script>
+</body>
+</html>

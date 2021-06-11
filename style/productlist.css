@@ -1,0 +1,625 @@
+body{
+    background-color: #EBEAD8;
+    min-width: 420px;
+  }
+  
+  
+  nav {
+    height: fit-content;
+  }
+  
+  .Desktop-nav {
+    width: 1000px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Desktop-nav.logo {
+    height: 100%;
+    width: 80px;
+  }
+  
+  .nav-block {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-block span {
+    margin: 0px 10px;
+  }
+  
+  nav {
+    display: flex;
+    flex-flow: row;
+    background-color: #cbc5c5;
+    justify-content: space-between;
+    min-width: 600px;
+    min-height: 40px;
+    max-height: 60px;
+  }
+  
+  .navlogo {
+    width: 80px;
+    margin: 0.2vh 1vw 0 0;
+    padding-right: 10;
+    align-self: center;
+    
+  }
+  .logo {
+    justify-content: center;
+    align-self: center;
+  }
+  .navbtn {
+    display: flex;
+    height: 40%;
+    align-self: center;
+    min-width: 400px;
+  }
+  
+  .navbtn li {
+    display: flex;
+    padding: 0.6rem;
+    margin-top: 0.3vw;
+    align-self: center;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05vw;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .icon li {
+    display: flex;
+    height: 40%;
+    align-self: center;
+    justify-content: flex-end;
+  }
+  
+  .icon li i {
+    justify-content: center;
+    padding: 0.6rem;
+    margin-top: 0.3vw;
+    align-self: center;
+  }
+  
+  .Desktop-nav {
+    width: 1000px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-block {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+  
+  
+  /* Here Comes Mobile Nav */
+  
+  @media screen and (max-width: 768px) {
+    .Desktop-nav {
+      display: none;
+    }
+  
+    .mobile-nav {
+      width: 100%;
+      height: fit-content;
+      margin: auto;
+      display: flex;
+    }
+  
+    .mobile-menu {
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+      margin-left: -10px;
+      cursor: pointer;
+    }
+  
+    .menu {
+      height: 100%;
+      width: 50px;
+    }
+    .menu > i {
+      font-size: 2rem;
+    }
+    .logo-mobile {
+      width: 130px;
+      position: absolute;
+      top: 4px;
+      left: 41%;
+      margin-top: 18px;
+    }
+    .mobile-cart-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;;
+    }
+  
+    .logo-mobile-cart {
+      width: 50px;
+      position: absolute;
+      top: 4px;
+      right: 0;
+      margin-top: 18px;
+    }
+    .logo-mobile-cart > i {
+      font-size: 2rem;
+    }
+    .search {
+      font-size: 2rem;
+      line-height: 1;
+    }
+  
+    .search > i {
+      font-size: 2rem;
+    }
+    .cart {
+      position: absolute;
+      text-align: end;
+      top: 0;
+      height: 100%;
+      width: 50px;
+    }
+    .cart > i {
+      font-size: 2rem;
+    }
+  
+    /* Side Menu */
+    .sidemenu * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    .sidemenu {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #a5a3a3;
+      overflow:auto;
+    }
+    .sidemenu {
+      display: none;
+    }
+    .cancel {
+      position: absolute;
+      top: 5%;
+      left: 90%;
+      font-size: 50px;
+      cursor: pointer;
+    }
+    .id {
+      margin-top: -15px;
+      font-size: 20px;
+      margin-left: 120px;
+      margin-right: 100px;
+      border-bottom: black solid 2px;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+  
+    .user {
+      position: relative;
+      top: 40px;
+      font-size: 90px;
+    }
+    .sidemenu h1 {
+      font-size: 40px;
+      color: black;
+      text-align: start;
+      margin-top: 7rem;
+      margin-left: 1rem;
+      line-height: 80px;
+      font-family: 'Playfair Display', serif;
+    }
+  
+    .sidemenu ul a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 80px;
+      font-size: 30px;
+      color: black;
+      padding-left: 100px;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+  
+    .signout {
+      margin-top: 60px;
+      font-size: 50px;
+      margin-left: 20px;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+    }
+    /* Search Mobile */
+    .form * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    .form {
+      display: none;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #a5a3a3;
+      width: 100%;
+      height: 42px;
+      padding: 15px;
+      border: none;
+    }
+  
+    #nav {
+      z-index: 999;
+      width: 100%;
+      background-color: #a5a3a3;
+    }
+  
+    input {
+      width: 80%;
+      height: 42px;
+      border: none;
+      border-radius: 1.5px;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 15px;
+      outline: none;
+    }
+    #btn {
+      font-size: 25px;
+      background-color: #a5a3a3;
+      border: 0;
+    }
+  }
+  
+  /* Main Start*/
+  
+  h2{
+      margin-top:8vh;
+      margin-left: 6vw;
+      font-family: 'Playfair Display', serif;
+      font-size: 5.5vw;
+  }
+  
+  
+  mainbar{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20vw;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    margin-top:2rem;
+    display: inline-block;
+  }
+  
+  .dropdown span{
+    font-family: 'Playfair Display', serif;
+    padding: 3vh 0.6vh  0 0.6vh;
+    font-size: 1.8vw;
+  
+  }
+  
+  .dropdown i{
+    font-size: 1vw;
+  }
+  .dropdowncotent {
+    display: none;
+    position: absolute;
+    background-color: #cbc5c5;
+    min-width: 8vw;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdowncotent p{
+    font-size: 1rem;
+    line-height: 2.5vh;
+  }
+  
+  .dropdown:hover{
+    color: white;
+    transition: 0.1s;
+  }
+  
+  .dropdown:hover .dropdowncotent {
+    display: block;
+  }
+  
+  .selectmenu ul{
+    display: flex;
+    margin-left: 18vw;
+    list-style: none;
+  }
+  
+  .selectmenu ul li{
+    padding: 3vh 0.6vh  0 0.6vh;
+    font-size: 1.4vw;
+  }
+  
+  
+  
+  
+  
+  /* Gallery Here */
+  
+  gallery{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  
+  .container {
+    width: 1100px;
+    margin: 20px auto;
+    padding: 0 10px;
+    column-count: 4;
+    column-gap:40px;
+  }
+  
+  .container .item {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    border-radius: 7px;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 0px;
+    background-color:white;
+    break-inside: avoid;
+    cursor: pointer;
+  }
+  .item img {
+    border-radius: 7px;
+    width: 100%;
+  }
+  .item h2 {
+    font-family: 'Playfair Display', serif;
+    font-size:2vh;
+    font-weight: bolder;
+    margin: 5px 0 0;
+    padding: 0.5vh;
+  }
+  
+  .item h5 {
+    font-family: 'Playfair Display', serif;
+    font-size:1vh;
+    font-weight: 800;
+    margin: 5px 0 0;
+    padding: 0.5vh;
+    
+  }
+  
+  
+  .item p{
+    padding: 0.5vh;
+    font-size:0.9vh;
+    margin: 0;
+    padding:0.5vw;
+    text-transform: capitalize ;
+    line-height: 0.3vh;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  
+  .item {
+    padding: 0.5vh;
+  }
+  
+  .priceinfo{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      list-style: none;
+      margin-top: -1.2vh;
+  }
+  
+  .price{
+    font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      padding-right: 0.5vw;
+      margin-top: -0.8vh;
+      margin-bottom: 0.4vh;
+  }
+  
+  .buybutton {
+      background-color: black;
+      border: none;
+      color: white;
+      padding: 0.9vh 0.8vw 0.8vh 0.8vw;
+      margin-bottom: 0.7vh;
+      margin-right: 0.5vw;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 0.35vw;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      letter-spacing: 0.05vw;
+    }
+  @media screen and (max-width: 1100px) {
+    .container {
+      column-count: 3;
+      width: calc(100% - 40px);
+      box-sizing: border-box;
+      padding: 20px 20px 20px 0;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .container {
+      column-count: 2;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*footer*/
+  footer{
+    list-style: none;
+    margin: 0;
+    margin-top: 5vh;
+    padding: 0;
+  
+  }
+  
+  .sock{
+    background-color: #cbc5c5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                          "left-foot right-foot"
+                          "left-tiptoe FindUs";
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    height:auto;
+  }
+  
+  
+  .left-foot{
+    grid-area: left-foot;
+    margin-left: 20vw;
+    display: flex;
+    flex-flow: column;
+    margin-top: 3rem;
+  }
+  
+  
+  .toptoe{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  
+  .left-foot a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3rem;
+    color:white;
+    font-size: 0.8rem;
+  }
+  
+  /* LeftTiptoe Socks on */
+  .left-foot a:first-child{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Get me my lawyer */
+  .copyright{
+    color: black;
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1vh;
+    margin-left: .3vh;
+    font-weight: bold;
+  }
+  
+  
+  /* Nice Kiddo, You Put Your Shoes on the Left Foot, HoHo! */
+  /* Putting Shoes on Right Foot */
+  .right-foot{
+    grid-area: right-foot;
+    margin-right: 20vw;
+    display: flex;
+    flex-flow: column;
+    margin-top: 3rem;
+    
+  }
+  
+  
+  
+  .right-foot a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3rem;
+    color:white;
+    font-size: 0.8rem;
+  }
+  
+  .right-foot a:first-child{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  
+  
+  /* Right tiptoe socks color */
+  
+  .left-tiptoe{
+    grid-area:left-tiptoe;
+    margin-left: 20vw;
+  }
+  
+  
+  .logo{
+    width:7vw;
+    max-width: 6rem;
+  }
+  /* Get me my lawyer */
+  .copyright{
+    color: black;
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1vh;
+    margin-left: .3vh;
+    font-weight: bold;
+  }
+  .FindUs{
+    grid-area: FindUs;
+  }
+  .FindUs ul{
+    padding-top: 0.2rem;
+    display: flex;
+    
+  }
+  .FindUs ul li{
+    padding-right: 0.2rem;
+  }
+  
+  
+  
+  /* Go out Kiddo */

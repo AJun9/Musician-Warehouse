@@ -1,0 +1,589 @@
+body {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 0;
+    background-color: #ebead8;
+  }
+  
+  .main {
+    max-width: 62rem;
+    margin: auto;
+  }
+  
+  h1 {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.01vw;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2vw;
+    letter-spacing: 0.1rem;
+    min-width: 10vw;
+  }
+  
+  .bought {
+    width: 100%;
+  }
+  
+  p.details {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+    word-break: normal;
+    width: 50vw;
+    min-width: 10rem;
+    line-height: 1rem;
+  }
+  
+  p.price {
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    right: 20%;
+    bottom: 20px;
+    position: absolute;
+  }
+  
+  .notes {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .fade {
+    font-family: "Roboto", sans-serif;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Font Finish */
+  
+  article.item {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .item {
+    max-width: 990px;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .itempic {
+    max-width: 265px;
+    position: relative;
+    flex-basis: 40%;
+    margin-right: 2%;
+  }
+  
+  .itempic > img {
+    width: 100%;
+    min-width: 100px;
+  }
+  
+  .desc {
+    max-width: 705px;
+    position: relative;
+    border-top: black;
+    border-bottom: black;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    display: flex;
+    flex-direction: column;
+  }
+  p.details {
+    height: 30px;
+    overflow: hidden;
+  }
+  p.price {
+    position: absolute;
+    right: 0;
+    bottom: 38px;
+  }
+  
+  
+  .function {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .notes {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing:0.1rem;
+    flex-basis: 15%;
+  }
+  .edit {
+    flex-basis: 15%;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing:0.1rem;
+  }
+  .fade {
+    flex-basis: 10%;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.18rem;
+  }
+  
+  
+  .Out {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: flex-end;
+  }
+  
+  .OutBtn {
+    position: relative;
+    justify-content: flex-end;
+  }
+  
+  .totalprice{
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing:0.1rem;
+  }
+  
+  
+  .checkout-button {
+    position: relative;
+    text-transform: uppercase;
+    padding:15px 40px 15px 40px;
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing:0.1rem;
+    margin-bottom: 30px;
+  }
+  
+  nav {
+    height: fit-content;
+    background-color: #e5c7c7;
+  }
+  
+  .Desktop-nav {
+    width: 1000px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .Desktop-nav.logo {
+    height: 100%;
+    width: 80px;
+    /* background: #000; */
+  }
+  
+  .nav-block {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-block span {
+    margin: 0px 10px;
+  }
+  
+  nav {
+    display: flex;
+    flex-flow: row;
+    background-color: #cbc5c5;
+    justify-content: space-between;
+    min-width: 600px;
+    min-height: 40px;
+    max-height: 60px;
+  }
+  
+  .navlogo {
+    width: 80px;
+    margin: 0.2vh 1vw 0 0;
+    padding-right: 10;
+    align-self: center;
+  }
+  .logo {
+    justify-content: center;
+    align-self: center;
+  }
+  .navbtn {
+    display: flex;
+    height: 40%;
+    align-self: center;
+    min-width: 400px;
+    margin-left: -30px;
+  }
+  
+  .navbtn li {
+    display: flex;
+    padding: 0.6rem;
+    margin-top: 0.3vw;
+    align-self: center;
+    font-size: 0.9vw;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05vw;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .icon li {
+    display: flex;
+    height: 40%;
+    align-self: center;
+    justify-content: flex-end;
+  }
+  
+  .icon li i {
+    justify-content: center;
+    padding: 0.6rem;
+    margin-top: 0.3vw;
+    align-self: center;
+  }
+  
+  .Desktop-nav {
+    width: 1000px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-block {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+  
+  /*footer*/
+  footer {
+    list-style: none;
+    height: fit-content;
+  }
+  
+  .sock {
+    background-color: #cbc5c5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "left-foot right-foot"
+      "left-tiptoe FindUs";
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  
+  .left-foot {
+    grid-area: left-foot;
+    margin-left: 20vw;
+    display: flex;
+    flex-flow: column;
+    margin-top: 3rem;
+  }
+  
+  .toptoe {
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    line-height: 1;
+  }
+  
+  .left-foot a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3rem;
+    color: white;
+    font-size: 1rem;
+    line-height: 0.6rem;
+  }
+  
+  /* LeftTiptoe Socks on */
+  .left-foot a:first-child {
+    font-family: 'Roboto', sans-serif;
+    word-break: normal;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+  }
+  
+  /* Get me my lawyer */
+  .copyright {
+    color: black;
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1vh;
+    margin-left: 0.3vh;
+    font-weight: bold;
+  }
+  
+  /* Nice Kiddo, You Put Your Shoes on the Left Foot, HoHo! */
+  /* Putting Shoes on Right Foot */
+  .right-foot {
+    grid-area: right-foot;
+    display: flex;
+    flex-flow: column;
+    margin-top: 3rem;
+  }
+  
+  .right-foot a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3rem;
+    color: white;
+    font-size: 1rem;
+    line-height: 0.6rem;
+  
+  }
+  
+  .right-foot a:first-child {
+    font-family: 'Roboto', sans-serif;
+    word-break: normal;
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+  }
+  
+  
+  /* Right tiptoe socks color */
+  
+  .left-tiptoe {
+    grid-area: left-tiptoe;
+    margin-left: 20vw;
+  }
+  
+  .logo {
+    width: 7vw;
+    max-width: 6rem;
+  }
+  /* Get me my lawyer */
+  .copyright {
+    color: black;
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1vh;
+    margin-left: 0.3vh;
+    font-weight: bold;
+  }
+  .FindUs {
+    grid-area: FindUs;
+  }
+  .FindUs ul {
+    list-style: none;
+    padding-top: 0.2rem;
+    display: flex;
+  }
+  .FindUs ul li {
+    padding-right: 0.2rem;
+  }
+  
+  /* Go out Kiddo */
+  
+  @media screen and (max-width: 768px) {
+   /* Here Comes Mobile Nav */
+   .Desktop-nav {
+    display: none;
+  }
+  
+  .mobile-nav {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+  }
+  
+  .mobile-menu {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin-left: -10px;
+    cursor: pointer;
+  }
+  
+  .menu {
+    height: 100%;
+    width: 50px;
+  }
+  .menu > i {
+    font-size: 2rem;
+  }
+  .logo-mobile {
+    width: 130px;
+    position: absolute;
+    top: 18px;
+    left: 41%;
+  }
+  .mobile-cart-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+  }
+  
+  .logo-mobile-cart {
+    width: 50px;
+    position: absolute;
+    top: 18px;
+    right: 0;
+  }
+  .logo-mobile-cart > i {
+    font-size: 2rem;
+  }
+  .search {
+    font-size: 2rem;
+    line-height: 1;
+  }
+  
+  .search > i {
+    font-size: 2rem;
+  }
+  .cart {
+    position: absolute;
+    text-align: end;
+    top: 0;
+    height: 100%;
+    width: 50px;
+  }
+  .cart > i {
+    font-size: 2rem;
+  }
+  
+  /* Side Menu */
+  
+  .sidemenu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  .sidemenu {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a5a3a3;
+    overflow:auto;
+  }
+  .sidemenu {
+    display: none;
+  }
+  .cancel {
+    position: absolute;
+    top: 5%;
+    left: 90%;
+    font-size: 50px;
+    cursor: pointer;
+  }
+  .id {
+    margin-top: 8px;
+    font-size: 20px;
+    margin-left: 120px;
+    margin-right: 100px;
+    padding-bottom: 10px;
+    border-bottom: black solid 2px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+  }
+  
+  .user {
+    position: relative;
+    top: 40px;
+    font-size: 90px;
+  }
+  .sidemenu h1 {
+    font-size: 40px;
+    color: black;
+    text-align: start;
+    margin-top: 7rem;
+    margin-left: 1rem;
+    line-height: 80px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .sidemenu ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 80px;
+    font-size: 30px;
+    color: black;
+    padding-left: 100px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+  }
+  
+  .signout {
+    margin-top: 60px;
+    font-size: 50px;
+    margin-left: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+  }
+  /* Search Mobile */
+  .form * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  .form {
+    display: none;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #a5a3a3;
+    width: 100%;
+    height: 42px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border: none;
+  }
+  
+  #nav {
+    z-index: 999;
+    width: 100%;
+    background-color: #a5a3a3;
+  }
+  
+  input {
+    width: 80%;
+    height: 42px;
+    background-color: #eeeeee;
+    border: none;
+    border-radius: 1.5px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  #btn {
+    font-size: 25px;
+    background-color: #a5a3a3;
+    border: 0;
+  }
+  }

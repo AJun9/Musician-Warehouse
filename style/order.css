@@ -1,0 +1,681 @@
+body {
+    margin: 0;
+    background:#EBEAD8;
+    }
+    
+    /* Site Analysis */
+    
+    nav {
+      height: fit-content;
+    }
+    
+    .Desktop-nav {
+      width: 1000px;
+      margin: auto;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .Desktop-nav.logo {
+      height: 100%;
+      width: 80px;
+    }
+    
+    .nav-block {
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-block span {
+      margin: 0px 10px;
+    }
+    
+    nav {
+      display: flex;
+      flex-flow: row;
+      background-color: #cbc5c5;
+      justify-content: space-between;
+      min-width: 600px;
+      min-height: 40px;
+      max-height: 60px;
+    }
+    
+    .navlogo {
+      width: 80px;
+      margin: 0.2vh 1vw 0 0;
+      padding-right: 10;
+      align-self: center;
+    }
+    .logo {
+      justify-content: center;
+      align-self: center;
+    }
+    .navbtn {
+      display: flex;
+      height: 40%;
+      align-self: center;
+      min-width: 400px;
+      margin-left: -30px;
+    }
+    
+    .navbtn li {
+      display: flex;
+      padding: 0.6rem;
+      margin-top: 0.3vw;
+      align-self: center;
+      font-size: 0.9vw;
+      text-transform: uppercase;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+      letter-spacing: 0.05vw;
+    }
+    
+    .icon {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .icon li {
+      display: flex;
+      height: 40%;
+      align-self: center;
+      justify-content: flex-end;
+    }
+    
+    .icon li i {
+      justify-content: center;
+      padding: 0.6rem;
+      margin-top: 0.3vw;
+      align-self: center;
+    }
+    
+    .Desktop-nav {
+      width: 1000px;
+      margin: auto;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-block {
+      display: flex;
+      align-items: center;
+    }
+    
+    .mobile-nav {
+      display: none;
+    }
+    
+    
+    
+    
+    
+    
+    /* Content Here */
+    .page {
+    display: grid;
+    max-width: 62rem;
+    margin: auto;
+    grid-template-areas: 
+        "title title"
+        "address payment"
+        "delivery checkout";
+    grid-template-columns: 1fr 1fr;
+    }
+    
+    .title {
+    grid-area: title;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.3rem;
+    font-size: 6rem;
+    margin-bottom: 2px;
+    }
+    .subtitle{
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1rem;
+    }
+    .address {
+      font-family: 'Roboto', sans-serif;
+    grid-area: address;
+    }
+    
+    .payment {
+    grid-area: payment;
+    }
+    
+    .delivery {
+    grid-area: delivery;
+    }
+    
+    .checkout {
+    grid-area: checkout;
+    }
+    
+    .form-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.625rem;
+    margin: 0.625rem 0 0;
+    letter-spacing: 0.15rem;
+    }
+    
+    input {
+    border: none;
+    margin-top: 0.625rem;
+    margin-bottom: 0.825rem;
+    outline:medium;
+    padding: 0.25rem 0.625rem;
+    width: 80%;
+    border-radius: 0.3rem;
+    }
+    
+    .city-group {
+    display: flex;
+    }
+    
+    .city-group section {
+    width: 44%;
+    }
+    
+    .city-group input {
+    width: 80%;
+    }
+    
+    .visa-group {
+    display: flex;
+    justify-items: center;
+    }
+    
+    .visa-group input {
+    width: 18rem;
+    }
+    
+    .visa-group div {
+    text-align: center;
+    margin-top: 0.625rem;
+    margin-left: 1rem;
+    background-color: white;
+    padding: 0.25rem 0.625rem;
+    font-size: 0.625rem;
+    }
+    
+    .visa-group .visa{
+    height: 2rem;
+    width: 4rem;
+    }
+    
+    .visa-group .visa>img{
+      height: 2rem;
+      width: 3rem;
+    }
+    
+    input{
+    height: 2rem;
+    }
+    
+    .delivery-wrapper{
+      font-family: 'Playfair Display', serif;
+    }
+    .check-select {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    }
+    
+    .check-select input {
+    width: auto;
+    }
+    
+    .check-select span {
+    font-size: 0.625rem;
+    font-weight: bolder;
+    }
+    
+    .checkout-wrapper, .confirm-wrapper {
+    display: flex;
+    width: 90%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+    }
+    
+    .checkout-wrapper span, .confirm-button {
+    padding: 0.625rem 1.825rem;
+    color: white;
+    font-size: 0.625rem;
+    background-color:black;
+    font-family: 'Playfair Display', serif;
+    }
+    
+    .confirm-wrapper {
+    width: 100%;
+    }
+    
+    .next-button {
+    display: none;
+    }
+    
+    .line {
+    display: none;
+    }
+    
+    .review-pop {
+    background:#EBEAD8;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    right: 100%;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    }
+    
+    .review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 6rem 3rem 3rem 3rem 3rem 3rem 3rem 5rem;
+    padding: 4rem;
+    width: 50rem;
+    }
+    
+    h2{
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+    }
+    
+    p{
+      font-family: 'Roboto', sans-serif;
+    }
+    /* mobile */
+    @media screen and (max-width: 768px) {
+    
+    /* Call Jonny Ive Back to Design the Mobile */
+    
+    .Desktop-nav {
+      display: none;
+    }
+    
+    .mobile-nav {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      display: flex;
+    }
+    
+    .mobile-menu {
+      display: flex;
+      justify-content: flex-start;
+      list-style: none;
+      margin-left: -10px;
+      cursor: pointer;
+    }
+    
+    .menu {
+      height: 100%;
+      width: 50px;
+    }
+    .menu > i {
+      font-size: 2rem;
+    }
+    .logo-mobile {
+      width: 130px;
+      position: absolute;
+      top: 18px;
+      left: 41%;
+    }
+    .mobile-cart-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: center;
+    }
+    
+    .logo-mobile-cart {
+      width: 50px;
+      position: absolute;
+      top: 18px;
+      right: 0;
+    }
+    .logo-mobile-cart > i {
+      font-size: 2rem;
+    }
+    .search {
+      font-size: 2rem;
+      line-height: 1;
+    }
+    
+    .search > i {
+      font-size: 2rem;
+    }
+    .cart {
+      position: absolute;
+      text-align: end;
+      top: 0;
+      height: 100%;
+      width: 50px;
+    }
+    .cart > i {
+      font-size: 2rem;
+    }
+    
+    /* Side Menu */
+    
+    .sidemenu * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    .sidemenu {
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #a5a3a3;
+      overflow:auto;
+    }
+    .sidemenu {
+      display: none;
+    }
+    .cancel {
+      position: absolute;
+      top: 5%;
+      left: 90%;
+      font-size: 50px;
+      cursor: pointer;
+    }
+    .id {
+      margin-top: -15px;
+      font-size: 20px;
+      margin-left: 120px;
+      margin-right: 100px;
+      border-bottom: black solid 2px;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+    
+    .user {
+      position: relative;
+      top: 40px;
+      font-size: 90px;
+    }
+    .sidemenu h1 {
+      font-size: 40px;
+      color: black;
+      text-align: start;
+      margin-top: 7rem;
+      margin-left: 1rem;
+      line-height: 80px;
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .sidemenu ul a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 80px;
+      font-size: 30px;
+      color: black;
+      padding-left: 100px;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+    }
+    
+    .signout {
+      margin-top: 60px;
+      font-size: 50px;
+      margin-left: 20px;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+    }
+    /* Search Mobile */
+    .form * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+    }
+    .form {
+      display: none;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #a5a3a3;
+      width: 100%;
+      height: 42px;
+      background: rgba(0, 0, 0, 0.2);
+      padding: 15px;
+      border: none;
+    }
+    
+    #nav {
+      z-index: 999;
+      width: 100%;
+      background-color: #a5a3a3;
+    }
+    
+    input {
+      width: 80%;
+      height: 42px;
+      background-color:white;
+      border: none;
+      border-radius: 1.5px;
+      font-family: 'Playfair Display', serif;
+      font-weight: bold;
+      font-size: 15px;
+      outline: none;
+    }
+    #btn {
+      font-size: 25px;
+      background-color: #a5a3a3;
+      border: 0;
+    }
+    
+    
+    
+    
+    
+    
+    .page {
+        display: grid;
+        width: 100%;
+        padding: 4%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "title"
+            "address"
+            "payment"
+            "delivery"
+            "checkout";
+    }
+    
+    input {
+        width: 90%;
+        font-size: 2rem;
+    }
+    
+    .checkout-wrapper {
+        margin-top: 5rem;
+    }
+    
+    .checkout-button {
+        display: none;
+    }
+    
+    .next-button {
+        margin-bottom: 3rem;
+        display: block;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .address-wrapper {
+        margin-bottom: 1rem;
+    }
+    
+    .payment-wrapper {
+        display: none;
+        margin-bottom: 1rem;
+    }
+    
+    .delivery-wrapper {
+        display: none;
+        margin-bottom: 1rem;
+    }
+    
+    h4 {
+    
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+    
+    .line {
+        display: block;
+        width: 92%;
+        height: 0.125rem;
+        background-color:black;
+    }
+    
+    .review-pop {
+        top: 100%;
+        right: 0;
+        width: 100%;
+    }
+    
+    .review {
+        width: 100%;
+    }
+    }
+    
+    /*footer*/
+    footer{
+        list-style: none;
+        margin: 0;
+        margin-top: 5vh;
+        padding: 0;
+      
+      }
+      
+      .sock{
+        background-color: #cbc5c5;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+                              "left-foot right-foot"
+                              "left-tiptoe FindUs";
+        justify-content: space-between;
+        padding: 0 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        height:auto;
+      }
+      
+      
+      .left-foot{
+        grid-area: left-foot;
+        margin-left: 20vw;
+        display: flex;
+        flex-flow: column;
+        margin-top: 3rem;
+      }
+      
+      
+      .toptoe{
+        font-size: 2rem;
+        text-decoration: none;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+      }
+      
+      .left-foot a{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        padding: 0.3rem;
+        color:white;
+        font-size: 0.8rem;
+      }
+      
+      /* LeftTiptoe Socks on */
+      .left-foot a:first-child{
+        color: black;
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+      }
+      
+      /* Get me my lawyer */
+      .copyright{
+        color: black;
+        font-size: 1vw;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 1vh;
+        margin-left: .3vh;
+        font-weight: bold;
+      }
+      
+      
+      /* Nice Kiddo, You Put Your Shoes on the Left Foot, HoHo! */
+      /* Putting Shoes on Right Foot */
+      .right-foot{
+        grid-area: right-foot;
+        margin-right: 20vw;
+        display: flex;
+        flex-flow: column;
+        margin-top: 3rem;
+        
+      }
+      
+      
+      
+      .right-foot a{
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        padding: 0.3rem;
+        color:white;
+        font-size: 0.8rem;
+      }
+      
+      .right-foot a:first-child{
+        color: black;
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+      }
+      
+      
+      
+      /* Right tiptoe socks color */
+      
+      .left-tiptoe{
+        grid-area:left-tiptoe;
+        margin-left: 20vw;
+      }
+      
+      
+      .logo{
+        width: 100px;
+      }
+      /* Get me my lawyer */
+      .copyright{
+        color: black;
+        font-size: 10px;
+        font-family: 'Roboto', sans-serif;
+        margin-top: 1vh;
+        margin-left: .3vh;
+        font-weight: bold;
+      }
+      .FindUs{
+        grid-area: FindUs;
+      }
+      .FindUs ul{
+        padding-top: 0.2rem;
+        display: flex;
+        
+      }
+      .FindUs ul li{
+        text-decoration: none;
+        padding-right: 0.2rem;
+      }
+      
+      
+      
+      /* Go out Kiddo */

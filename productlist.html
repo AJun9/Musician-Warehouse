@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c83b823ada.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style/productlist.css">
+    <title>Result</title>
+</head>
+<body>
+  <nav>
+    <div class="Desktop-nav">
+        <div class="navlogo nav-block">
+            <img class="logo" src="logo.svg" alt="logo">
+            <ul class="navbtn">
+              <li a href="#">guitar</li>
+              <li a href="#">bass</li>
+              <li a href="#">amplifier</li>
+              <li a href="#">space</li>
+              <li a href="#">bag</li>
+            </ul>
+        </div>
+      <ul class="icon nav-block">
+          <li onclick="window.open('productlist.html')"><i href="#" class="fas fa-search"></i></li>
+          <li><i href="#" class="fas fa-user-circle"></i></li>
+          <li><i href="#" class="far fa-bell"></i></li>
+          <li><i href="#" class="fas fa-ellipsis-v"></i></li>
+      </ul>
+    </div>
+    
+    <div class="mobile-nav">
+      <ul class="mobile-menu">
+        <li class="menu" onclick="menuShowClick()"><i class="fas fa-bars"></i></li>
+        <li class="search" onclick="searchShowClick()"><i class="fas fa-search"></i></li>
+      </ul>
+      <div>
+    </div>
+
+    <div>
+      <img src="mobilelogo.svg" class="logo-mobile">
+    </div>
+    
+    <div class="logo-mobile-cart">
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    
+    <div class="sidemenu">
+      <p class="cancel" onclick="menuHideClick()"><i class="fas fa-times"></i></p>
+      <h1 class="username"><span class="user"><i href="#" class="fas fa-user-circle"></i></span> John Appleased</h1>
+      <p class="id">@johnappleased</p>
+      <ul>
+        <li><a href="#">Account</a></li>
+        <li><a href="cart.html">Bag</a></li>
+        <li><a href="#">Space</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Notificaion</a></li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <p class="signout">Sign out</p>
+    </div>
+
+    <div class="form">
+      <div id="nav">
+        <input type="text" name="uname" placeholder="Search here...">  
+        <button id="btn" onclick="searchHideClick()"><i class="far fa-times-circle"></i></button>
+    </div>
+</nav>
+
+
+<!-- This is the body -->
+<div class="content">
+<h2>"Fender Guitar</h2>
+<mainbar>
+    <div class="dropdown">
+        <span>Category</span>
+        <i class="fas fa-arrow-down"></i>
+        <div class="dropdowncotent">
+            <p>Bass</p>
+            <p>Amplifier</p>
+            <P>Keyboard</P>
+            <p>Drum</p>
+            <p>Drum Stick</p>
+            <p>Wicked Wings</p>
+        </div>
+    </div>
+
+    <div class="selectmenu">
+         <ul>
+            <li><a href="#"></a><i class="fas fa-filter"></i></li>
+            <li><a href="#"></a>Filter</li>
+            <li><a href="#"></a><i class="fas fa-sort-amount-down-alt"></i></li>
+            <li><a href="#"></a>Sort</li>
+        </ul>
+    </div>
+</mainbar>
+
+<!-- gallery here -->
+
+<section class="gallery">
+    <div class="container">
+      <div class="item">
+        <img src="./product img/giancarlo-duarte-cTj8vbZeX44-unsplash.jpg" alt="port" onclick="window.open('product.html')">
+        <h2>Fender Electric Guitar</h2>
+        <p>Mint, no damage.</p>
+        <p>Uniquely handcrafted by craftspersons</p>
+        <h5>FREE DELIVERY</h5>
+        <ul class="priceinfo">
+            <li class="price">$1800</li>
+            <li><a href="#" class="buybutton" onclick="window.open('cart.html')">ADD TO CART</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <a href="../product.html">
+            <img src="./product img/martin-rajdl-Olg60_RTPc8-unsplash.jpg" alt="port">
+        </a>
+        <h2>Fender Electric Guitar</h2>
+        <p>Mint, no damage.</p>
+        <p>Uniquely handcrafted by craftspersons</p>
+        <h5>FREE DELIVERY</h5>
+        <ul class="priceinfo">
+            <li class="price">$1800</li>
+            <li><a href="#" class="buybutton">ADD TO CART</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <img src="./product img/ariyo-aanu-sbKo6Frp95M-unsplash.jpg" alt="port">
+        <h2>Fender Electric Guitar</h2>
+        <p>Mint, no damage.</p>
+        <p>Uniquely handcrafted by craftspersons</p>
+        <h5>FREE DELIVERY</h5>
+        <ul class="priceinfo">
+            <li class="price">$1800</li>
+            <li><a href="#" class="buybutton">ADD TO CART</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <img src="./product img/alejandro-morelos-6WOtQjsxlpU-unsplash.jpg" alt="port">
+        <h2>Fender Electric Guitar</h2>
+        <p>Mint, no damage.</p>
+        <p>Uniquely handcrafted by craftspersons</p>
+        <h5>FREE DELIVERY</h5>
+        <ul class="priceinfo">
+            <li class="price">$1800</li>
+            <li><a href="#" class="buybutton">ADD TO CART</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <img src="./product img/caio-silva-uszCr5AW1jA-unsplash.jpg" alt="port">
+        <h2>Fender Electric Guitar</h2>
+        <p>Mint, no damage.</p>
+        <p>Uniquely handcrafted by craftspersons</p>
+        <h5>FREE DELIVERY</h5>
+        <ul class="priceinfo">
+            <li class="price">$1800</li>
+            <li><a href="#" class="buybutton">ADD TO CART</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <img src="./product img/william-fonteneau-nm33mbpW0gc-unsplash.jpg" alt="port">
+        <h2>Fender Electric Guitar</h2>
+        <p>Mint, no damage.</p>
+        <p>Uniquely handcrafted by craftspersons</p>
+        <h5>FREE DELIVERY</h5>
+        <ul class="priceinfo">
+            <li class="price">$1800</li>
+            <li><a href="#" class="buybutton">ADD TO CART</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <img src="./product img/ardi-evans-sE5jeInrW70-unsplash.jpg" alt="port">
+        <h2>Fender Electric Guitar</h2>
+        <p>Mint, no damage.</p>
+        <p>Uniquely handcrafted by craftspersons</p>
+        <h5>FREE DELIVERY</h5>
+        <ul class="priceinfo">
+            <li class="price">$1800</li>
+            <li><a href="#" class="buybutton">ADD TO CART</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+            <img src="./product img/louis-hansel-M_dJ_ScwaLE-unsplash.jpg" alt="port">
+        </a>
+        <h2>Fender Electric Guitar</h2>
+        <p>Mint, no damage.</p>
+        <p>Uniquely handcrafted by craftspersons</p>
+        <h5>FREE DELIVERY</h5>
+        <ul class="priceinfo">
+            <li class="price">$1800</li>
+            <li><a href="#" class="buybutton">ADD TO CART</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <img src="./product img/jacek-dylag-71k2FbrLMjA-unsplash.jpg" alt="port">
+        <h2>Fender Electric Guitar</h2>
+        <p>Mint, no damage.</p>
+        <p>Uniquely handcrafted by craftspersons</p>
+        <h5>FREE DELIVERY</h5>
+        <ul class="priceinfo">
+            <li class="price">$1800</li>
+            <li><a href="#" class="buybutton">ADD TO CART</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <img src="./product img/thomas-millot-0bBi5rjwS_s-unsplash.jpg" alt="port">
+        <h2>Fender Electric Guitar</h2>
+        <p>Mint, no damage.</p>
+        <p>Uniquely handcrafted by craftspersons</p>
+        <h5>FREE DELIVERY</h5>
+        <ul class="priceinfo">
+            <li class="price">$1800</li>
+            <li><a href="#" class="buybutton">ADD TO CART</a></li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <img src="./product img/ariyo-aanu-sbKo6Frp95M-unsplash.jpg" alt="port">
+        <h2>Fender Electric Guitar</h2>
+        <p>Mint, no damage.</p>
+        <p>Uniquely handcrafted by craftspersons</p>
+        <h5>FREE DELIVERY</h5>
+        <ul class="priceinfo">
+            <li class="price">$1800</li>
+            <li><a href="#" class="buybutton">ADD TO CART</a></li>
+        </ul>
+      </div>
+
+    
+    </section>
+
+
+<!-- This is footer -->
+<footer>
+    <div class="sock">
+            <div class="left-foot">
+                <a class="toptoe" href="#">Customer Service</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Delievery Information</a>
+                <a href="#">Return Policy</a>
+                <a href="#">Return Policy</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Retrieve Store Quote</a>
+                <a href="#">Finance</a>
+                <a href="#">Cookie Information</a>
+                <a href="#">Terms & Condition</a>
+            </div>
+            <div class="left-tiptoe">
+                <img src ="logo.svg" alt="mw" class="logo">
+                <p class ="copyright">©️2021</p>
+            </div>
+
+
+            <div class="right-foot">
+                <a class="toptoe" href="#">Our Story & Service</a>
+                <a href="#">E-Gift Cards</a>
+                <a href="#">News</a>
+                <a href="#">Education</a>
+                <a href="#">Music Therapy</a>
+                <a href="#">Our Value</a>
+                <a href="#">Newsroom</a>
+                <a href="#">Find Us Local</a>
+                <a href="#">Tune</a>
+                <a href="#">Our Story in Athens</a>
+            </div>
+            <div class="FindUs">
+                <a class="toptoe" href="#">Find Us</a>
+                <ul class="social-icons">
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-tiktok"></i></li>
+                    <li><i class="fab fa-instagram-square"></i></li>
+                </ul> 
+            </div>
+
+    </div>
+</footer>
+</div>
+<script>
+    function menuShowClick() {
+      document.getElementsByClassName("sidemenu")[0].style.display = 'block';
+      document.getElementsByClassName("content")[0].style.display = 'none';
+      document.getElementsByClassName("nav")[0].style.display = 'none';
+      document.getElementsByClassName("form")[0].style.display = 'none';
+    }
+  
+    function menuHideClick(){
+      document.getElementsByClassName("sidemenu")[0].style.display = 'none';
+      document.getElementsByClassName("content")[0].style.display = 'block';
+      document.getElementsByClassName("form")[0].style.display = 'none';
+    }
+    function searchShowClick() {
+      document.getElementsByClassName("form")[0].style.display = 'block';
+      document.getElementsByClassName("content")[0].style.display = 'none';
+      document.getElementsByClassName("sidemenu")[0].style.display = 'none';
+      document.getElementsByClassName("nav")[0].style.display = 'none';
+    }
+  
+    function searchHideClick(){
+      document.getElementsByClassName("form")[0].style.display = 'none';
+      document.getElementsByClassName("content")[0].style.display = 'block';
+      document.getElementsByClassName("sidemenu")[0].style.display = 'none';
+      
+    }
+  </script>
+</body>
+</html>

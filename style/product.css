@@ -1,0 +1,562 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #EBEAD8;
+    line-height: 1.5;
+
+}
+.card-wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+img{
+  width: 100%;
+  display: block;
+}
+
+
+.img-display{
+  overflow: hidden;
+}
+
+
+nav {
+  height: fit-content;
+}
+
+.Desktop-nav {
+  width: 1000px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Desktop-nav.logo {
+  height: 100%;
+  width: 80px;
+  /* background: #000; */
+}
+
+.nav-block {
+  display: flex;
+  align-items: center;
+}
+
+.nav-block span {
+  margin: 0px 10px;
+}
+
+nav {
+  display: flex;
+  flex-flow: row;
+  background-color: #cbc5c5;
+  justify-content: space-between;
+  min-width: 600px;
+  min-height: 40px;
+  max-height: 60px;
+}
+
+.navlogo {
+  width: 80px;
+  margin: 0.2vh 1vw 0 0;
+  padding-right: 10;
+  align-self: center;
+}
+.logo {
+  justify-content: center;
+  align-self: center;
+  margin-right: 30px;
+}
+.navbtn {
+  display: flex;
+  height: 40%;
+  align-self: center;
+  min-width: 400px;
+  margin-left: -30px;
+}
+
+.navbtn li {
+  display: flex;
+  padding: 0.6rem;
+  margin-top: 0.3vw;
+  align-self: center;
+  font-size: 0.9vw;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05vw;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.icon li {
+  display: flex;
+  height: 40%;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.icon li i {
+  justify-content: center;
+  padding: 0.6rem;
+  margin-top: 0.3vw;
+  align-self: center;
+}
+
+.Desktop-nav {
+  width: 1000px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-block {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.product-content{
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+.product-title{
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color:black;
+}
+
+.tinytitle{
+    font-size: 1.3vh;
+    text-transform: capitalize;
+    margin-bottom: 3vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 0.2vw;
+    
+}
+
+
+.product-des p{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0.2vw;
+}
+
+.product-price{
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem 0;
+    font-size: 1.8vw;
+    font-weight: 700;
+}
+
+.purchase-info{
+    display: flex;
+
+}
+
+.btn-buy{
+  background-color: black;
+  color: white;
+  padding:1.2rem 6rem 1.2rem 6rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
+}
+.btn-add,.btn-wish{
+  background-color: white;
+  color: black;
+  padding:0.8rem 1rem 0.8rem 1.4em;
+  font-size: 0.8rem;
+  letter-spacing: 0.03rem;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 1rem;
+  border: none;
+}
+.detailtitle{
+  padding-bottom: 0.3rem;
+  border-bottom: black 4px solid;
+  font-size: 2rem;
+
+}
+.detailtxt{
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+}
+
+.commenttitle{
+    padding-bottom: 0.3rem;
+    border-bottom: black 4px solid;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.username{
+  font-size: 2rem;
+}
+
+.avatar{
+  font-size: 3rem;
+}
+.user-rating{
+  font-size: 1.4rem;
+}
+
+@media screen and (max-width: 700px) {
+  /* Here Comes Mobile Nav */
+  .Desktop-nav {
+   display: none;
+ }
+ 
+ .mobile-nav {
+   width: 100%;
+   height: 100%;
+   margin: auto;
+   display: flex;
+ }
+ 
+ .mobile-menu {
+   display: flex;
+   justify-content: flex-start;
+   list-style: none;
+   margin-left: -10px;
+   cursor: pointer;
+ }
+ 
+ .menu {
+   height: 100%;
+   width: 50px;
+ }
+ .menu > i {
+   font-size: 2rem;
+ }
+ .logo-mobile {
+   width: 130px;
+   position: absolute;
+   top: 10px;
+   left: 41%;
+ }
+ .mobile-cart-div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   align-self: center;
+ }
+ 
+ .logo-mobile-cart {
+   width: 50px;
+   position: absolute;
+   top: 10px;
+   right: 0;
+ }
+ .logo-mobile-cart > i {
+   font-size: 2rem;
+ }
+ .search {
+   font-size: 2rem;
+   line-height: 1;
+ }
+ 
+ .search > i {
+   font-size: 2rem;
+ }
+ .cart {
+   position: absolute;
+   text-align: end;
+   top: 0;
+   height: 100%;
+   width: 50px;
+ }
+ .cart > i {
+   font-size: 2rem;
+ }
+ 
+ /* Side Menu */
+ 
+ .sidemenu * {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+ }
+ .sidemenu {
+   position: fixed;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #a5a3a3;
+   overflow:auto;
+ }
+ .sidemenu {
+   display: none;
+ }
+ .cancel {
+   position: absolute;
+   top: 5%;
+   left: 90%;
+   font-size: 50px;
+   cursor: pointer;
+ }
+ .id {
+   margin-top: 8px;
+   font-size: 20px;
+   margin-left: 120px;
+   margin-right: 100px;
+   padding-bottom: 10px;
+   border-bottom: black solid 2px;
+   font-family: 'Playfair Display', serif;
+   font-style: italic;
+ }
+ 
+ .user {
+   position: relative;
+   top: 40px;
+   font-size: 90px;
+ }
+ .sidemenu h1 {
+   font-size: 40px;
+   color: black;
+   text-align: start;
+   margin-top: 7rem;
+   margin-left: 1rem;
+   line-height: 80px;
+   font-family: 'Playfair Display', serif;
+ }
+ 
+ .sidemenu ul a {
+   display: block;
+   height: 100%;
+   width: 100%;
+   line-height: 80px;
+   font-size: 30px;
+   color: black;
+   padding-left: 100px;
+   font-family: 'Playfair Display', serif;
+   font-style: italic;
+ }
+ 
+ .signout {
+   margin-top: 60px;
+   font-size: 50px;
+   margin-left: 20px;
+   font-family: 'Playfair Display', serif;
+   font-weight: bold;
+ }
+ /* Search Mobile */
+ .form * {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   text-decoration: none;
+ }
+ .form {
+   display: none;
+   position: fixed;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #a5a3a3;
+   width: 100%;
+   height: 42px;
+   padding: 15px;
+   border: none;
+ }
+ 
+ #nav {
+   z-index: 999;
+   width: 100%;
+   background-color: #a5a3a3;
+ }
+ 
+ input {
+   width: 80%;
+   height: 42px;
+   background-color: white;
+   border: none;
+   border-radius: 1.5px;
+   font-family: 'Playfair Display', serif;
+   font-weight: bold;
+   font-size: 15px;
+   outline: none;
+ }
+ #btn {
+   font-size: 25px;
+   background-color: #a5a3a3;
+   border: 0;
+ }
+ 
+ }
+
+
+
+
+@media screen and (min-width: 700px){
+    .card{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5rem;
+    }
+    .card-wrapper{ 
+        margin: auto;
+    }
+    .product-imgs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-content{
+        padding-top: 0;
+    }
+}
+
+
+/*footer*/
+footer{
+    list-style: none;
+    margin: 0;
+    margin-top: 5vh;
+    padding: 0;
+  
+  }
+  
+  .sock{
+    background-color: #cbc5c5;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+                          "left-foot right-foot"
+                          "left-tiptoe FindUs";
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    height:auto;
+  }
+  
+  
+  .left-foot{
+    grid-area: left-foot;
+    margin-left: 20vw;
+    display: flex;
+    flex-flow: column;
+    margin-top: 3rem;
+  }
+  
+  
+  .toptoe{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+  
+  .left-foot a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3rem;
+    color:white;
+    font-size: 0.8rem;
+  }
+  
+  /* LeftTiptoe Socks on */
+  .left-foot a:first-child{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Get me my lawyer */
+  .copyright{
+    color: black;
+    font-size: 1vw;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1vh;
+    margin-left: .3vh;
+    font-weight: bold;
+  }
+  
+  
+  /* Nice Kiddo, You Put Your Shoes on the Left Foot, HoHo! */
+  /* Putting Shoes on Right Foot */
+  .right-foot{
+    grid-area: right-foot;
+    margin-right: 20vw;
+    display: flex;
+    flex-flow: column;
+    margin-top: 3rem;
+    
+  }
+  
+  
+  
+  .right-foot a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.3rem;
+    color:white;
+    font-size: 0.8rem;
+  }
+  
+  .right-foot a:first-child{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  
+  
+  /* Right tiptoe socks color */
+  
+  .left-tiptoe{
+    grid-area:left-tiptoe;
+    margin-left: 20vw;
+  }
+  
+  
+  .logo{
+    width: 100px;
+  }
+  /* Get me my lawyer */
+  .copyright{
+    color: black;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1vh;
+    margin-left: .3vh;
+    font-weight: bold;
+  }
+  .FindUs{
+    grid-area: FindUs;
+  }
+  .FindUs ul{
+    list-style: none;
+    padding-top: 0.2rem;
+    display: flex;
+    
+  }
+  .FindUs ul li{
+    padding-right: 0.2rem;
+  }
+  
+  
+  
+  /* Go out Kiddo */
